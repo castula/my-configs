@@ -1,0 +1,33 @@
+{
+  "data-root": "/opt/docker",
+  "log-level": "warn",
+  "ipv6": true,
+  "fixed-cidr-v6": "2001:db8:1::/64",
+  "experimental": true,
+  "ip6tables": true,
+  "live-restore": true,
+  "userland-proxy": false,
+  "max-concurrent-downloads": 3,
+  "max-concurrent-uploads": 3,
+  "default-ulimits": {
+    "nofile": {
+      "Name": "nofile",
+      "Hard": 65535,
+      "Soft": 65535
+    }
+  },
+  "dns": [
+    "223.5.5.5",
+    "223.6.6.6",
+    "2400:3200::1",
+    "2400:3200:baba::1"
+  ],
+  "registry-mirrors": [
+    "https://docker.1panel.live"
+  ],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "2"
+  }
+}
